@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Lagoon View Resort Home </title>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex">
+        <link  rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Grape+Nuts&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div id="blackbar"></div>
+                
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="reservation.html">Reservation</a> </li>
+                        <li> <a href="car.html" >Vehicle</a> </li> 
+                        <li> <a href="photo.html">Gallery</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                   </ul> 
+                </nav> 
+
+            <main>
+                <h1>Photo Gallery</h1>
+              
+                    <div class="w3-content w3-display-container">
+                        <img class="mySlides" src="images/gallery1.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery6.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery3.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery4.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery5.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery9.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery2.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery7.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery8.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery10.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery11.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery12.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery13.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery14.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery15.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery16.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery17.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery18.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery19.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery20.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery21.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery22.jpeg" style="width:100%" alt="Image cannot be displayed">
+                        <img class="mySlides" src="images/gallery23.jpeg" style="width:100%" alt="Image cannot be displayed">
+
+                      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      x[slideIndex-1].style.display = "block";  
+                    }
+                    </script>
+
+            </main>
+            
+            <footer>
+                Lagoon View Resort<br>
+                Tabwakea, Kiritimati Island, Republic of Kiribati<br>
+                Contact us at <a href="mailto:kiritimatilagoonview@gmail.com">kiritimatilagoonview@gmail.com</a> 
+            </footer>
+        </div>
+    </body>
+    
+</html>
